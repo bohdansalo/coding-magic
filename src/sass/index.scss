@@ -1,2 +1,10 @@
-@import './common';
+// base
+@import './base/base';
+@import './base/common';
+@import './base/reset';
+@import './base/typography';
+// loyout
+@import './layout/grids';
+// utils
 @import './utils/variables';
+// components
