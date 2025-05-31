@@ -13,7 +13,6 @@ buttons.forEach(button => {
     button.classList.add('active');
   });
 });
-
 equalButton.addEventListener('click', () => {
   const num1 = parseFloat(inputs[0].value);
   const num2 = parseFloat(inputs[1].value);
