@@ -2,11 +2,10 @@ import games from './data/games.js';
 
 const renderGames = () => {
   const gameContainer = document.querySelector('[data-game_container]');
-
   gameContainer.innerHTML = games
     .map(
       game =>
-        `<section class='section' id='${game.id}'>
+        `<section class="${game.class}" id='${game.id}'>
            <div class="container">
             <div class="game ${game.class}">
             </div>
@@ -20,7 +19,6 @@ const renderGames = () => {
       game.init();
     }
   });
-  console.log(gameContainer);
 };
 
 document.addEventListener('DOMContentLoaded', () => {
