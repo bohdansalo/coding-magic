@@ -13,16 +13,17 @@ export const guessNumberInit = () => {
     document.body.appendChild(gameContainer);
   }
 
-  console.log(gameContainer);
-
   const gameHTML = `
+
     <div class="game__guess-num">
         <h2 class="guess-num__title">Вгадай число, яке загадав комп’ютер</h2>
+        <div class="guess-num__wrapper">
         <form class="guess-num__form" data-guess_form>
-        <input type="number" name="guess-num__input" id="guess__input" 
+        <input type="number" class="guess-num__input" name="guess-num__input" id="guess__input" 
         placeholder="Введіть число" data-guess_input required />
       <button type="submit" class="guess-num__btn" data-guess_btn>
     </form>
+    </div>
     </div>
     `;
 
@@ -37,17 +38,17 @@ export const guessNumberInit = () => {
     const userGuess = parseInt(guessInput.value);
 
     if (userGuess < randomNumber) {
-      gameContainer.insertAdjacentElement('afterend', resultMessage);
+      guessForm.insertAdjacentElement('afterend', resultMessage);
       resultMessage.textContent = 'Ваше число менше за загаданe.';
       resultMessage.style.color = 'red';
     }
     if (userGuess > randomNumber) {
-      gameContainer.insertAdjacentElement('afterend', resultMessage);
+      guessForm.insertAdjacentElement('afterend', resultMessage);
       resultMessage.textContent = 'Ваше число більше за загаданe.';
       resultMessage.style.color = 'red';
     }
     if (userGuess === randomNumber) {
-      gameContainer.insertAdjacentElement('afterend', resultMessage);
+      guessForm.insertAdjacentElement('afterend', resultMessage);
       resultMessage.textContent = 'Вітаємо! Ви вгадали число!';
       resultMessage.style.color = 'green';
     }
