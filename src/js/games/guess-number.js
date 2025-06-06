@@ -2,13 +2,6 @@ export const guessNumberInit = () => {
   const randomNumber = Math.floor(Math.random() * 10) + 1;
   const gameContainer = document.querySelector('.guess-number');
 
-  if (!gameContainer) {
-    console.warn(
-      'Контейнер для гри "Вгадай число" не знайдено. Створюємо новий контейнер.'
-    );
-    return;
-  }
-
   const gameHTML = `
     <div class="game__guess-num">
         <h2 class="guess-num__title">Вгадай число, яке загадав комп’ютер</h2>
