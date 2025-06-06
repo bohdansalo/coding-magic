@@ -7,9 +7,10 @@ const renderGames = (games, container, category = 'all') => {
   const filterGames = filteredGames(games, category);
 
   gameContainer.innerHTML = filterGames
+
     .map(
       game =>
-        `<section class='section' id='${game.id}'>
+        `<section class="${game.class}" id='${game.id}'>
            <div class="container">
             <div class="game ${game.class}">
             </div>

@@ -1,10 +1,11 @@
 // base
+@import './base/reset';
+@import './utils/variables';
+@import './utils/mixin';
 @import './base/base';
 @import './base/common';
-@import './base/reset';
 @import './base/typography';
-// loyout
 @import './layout/grids';
-// utils
-@import './utils/variables';
+
 // components
+@import './components/guess-number';
