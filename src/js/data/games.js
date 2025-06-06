@@ -12,7 +12,7 @@ const games = [
     name: 'Вгадай число',
     category: 'numerical',
     class: 'guess-number',
-    init: guessNumberInit(),
+    init: guessNumberInit,
   },
   {
     id: 3,
