@@ -1,9 +1,12 @@
 import games from './data/games.js';
+import { filteredGames } from './helpers.js';
 
-const renderGames = () => {
-  const gameContainer = document.querySelector('[data-game_container]');
+const gameContainer = document.querySelector('[data-game_container]');
 
-  gameContainer.innerHTML = games
+const renderGames = (games, container, category = 'all') => {
+  const filterGames = filteredGames(games, category);
+
+  gameContainer.innerHTML = filterGames
     .map(
       game =>
         `<section class='section' id='${game.id}'>
@@ -15,14 +18,15 @@ const renderGames = () => {
     )
     .join('');
 
-  games.forEach(game => {
+  filterGames.forEach(game => {
     if (game.init) {
       game.init();
     }
   });
-  console.log(gameContainer);
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  renderGames(games);
+  renderGames(games, gameContainer);
 });
+
+export default renderGames;
