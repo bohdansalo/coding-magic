@@ -6,8 +6,7 @@ const gameContainer = document.querySelector('[data-game_container]');
 const renderGames = (games, container, category = 'all') => {
   const filterGames = filteredGames(games, category);
 
-  gameContainer.innerHTML = filterGames
-
+  container.innerHTML = filterGames
     .map(
       game =>
         `<section class="${game.class}" id='${game.id}'>
