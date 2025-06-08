@@ -1,8 +1,8 @@
 html[data-theme='dark'] {
   color-scheme: dark;
-
+  --color-text-primary: #58a6a2;
   --color-text-secondary: #282626;
-  --color-background-photo-frame: #58a6a2;
+  --color-navigation-hover: #58a6a2;
 }
 
 .header-container {
@@ -35,7 +35,7 @@ html[data-theme='dark'] {
   &:hover {
     transition: 0.3s;
     cursor: pointer;
-    color: var(--color-background-photo-frame);
+    color: var(--color-text-primary);
   }
 }
 .nav-item:hover .filter__list {
@@ -59,7 +59,7 @@ html[data-theme='dark'] {
   left: 0;
   flex-direction: column;
   overflow: hidden;
-  color: var(--color-background-photo-frame);
+  color: var(--color-text-primary);
   background-color: var(--color-text-secondary);
   border-bottom: 1px solid #000;
   border-left: 1px solid #000;
@@ -72,12 +72,12 @@ html[data-theme='dark'] {
   padding: 10px;
   transition: 0.3s ease;
   inline-size: 100%;
-}
-.filter__button:hover {
-  color: var(--color-background-photo-frame);
-  background-color: #f1f1f1;
-  transition: 0.5s ease;
-  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-navigation-hover);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
 }
 
 // theme switch
@@ -97,7 +97,7 @@ html[data-theme='dark'] {
 .slider {
   position: absolute;
   cursor: pointer;
-  background-color: #7a7a7a;
+  background-color: var(--color-background-switch);
   border-radius: 30px;
   width: 40px;
   transition: background-color 0.3s;
@@ -105,21 +105,21 @@ html[data-theme='dark'] {
   left: 0;
   right: 0;
   bottom: 0;
-}
 
-.slider::before {
-  content: '';
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  transition: 0.3s;
-  border: 1px solid black;
-  background-color: white;
-  background-image: url('/src/images/header/sun.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: 1px solid black;
+    background-color: white;
+    background-image: url('/src/images/header/sun.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .input:checked + .slider::before {
