@@ -47,7 +47,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-      @include bg($colorTextPrimary, 0.8);
+      @include bg(var(colorTextPrimary), 0.8);
     }
   }
 }
