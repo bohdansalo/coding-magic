@@ -4,9 +4,14 @@ body {
   font-weight: 400;
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
-  background-color: white;
+  background-image: url(/src/images/main/white-theme-bg-main.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-body.dark {
-  background-color: black;
-  color: white;
-}
+// body.dark {
+//   background-image: url(/src/images/main/dark-theme-bg-main.webp);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+// }
