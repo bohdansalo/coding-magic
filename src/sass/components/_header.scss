@@ -1,22 +1,20 @@
-:root {
-  --colorTextPrimary: #212121;
-  --colorBgPrimary: #f2f2f2;
-}
-
 html[data-theme='dark'] {
   color-scheme: dark;
-  --colorTextPrimary: #af2525;
-  --colorBgPrimary: #b93737;
+
+  --color-text-secondary: #282626;
+  --color-background-photo-frame: #58a6a2;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px;
+  padding-block: 21px;
 }
+
 .header {
-  background-color: #f1f1f1;
+  background-color: var(--color-text-secondary);
+  transition: 0.3s;
 }
 
 .header__actions {
@@ -33,10 +31,24 @@ html[data-theme='dark'] {
 }
 .nav-item {
   position: relative;
+
+  &:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--color-background-photo-frame);
+  }
 }
 .nav-item:hover .filter__list {
   display: flex;
 }
+.nav-text::after {
+  content: '⏷';
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  transform: translateX(8);
+}
+
 // select
 .filter__list {
   display: none;
@@ -47,7 +59,8 @@ html[data-theme='dark'] {
   left: 0;
   flex-direction: column;
   overflow: hidden;
-  background-color: white;
+  color: var(--color-background-photo-frame);
+  background-color: var(--color-text-secondary);
   border-bottom: 1px solid #000;
   border-left: 1px solid #000;
   border-right: 1px solid #000;
@@ -61,6 +74,7 @@ html[data-theme='dark'] {
   inline-size: 100%;
 }
 .filter__button:hover {
+  color: var(--color-background-photo-frame);
   background-color: #f1f1f1;
   transition: 0.5s ease;
   cursor: pointer;
@@ -112,13 +126,4 @@ html[data-theme='dark'] {
   transform: translateX(21px) rotate(360deg);
   background-image: url('/src/images/header/moon.svg');
   background-color: black;
-}
-body {
-  transition: background-color 0.3s, color 0.3s;
-  background-color: white;
-}
-
-body.dark {
-  background-color: black;
-  color: white;
 }

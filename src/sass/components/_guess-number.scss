@@ -41,13 +41,13 @@
     padding: 10px;
     font-size: 1rem;
     color: #fff;
-    background-color: $colorTextPrimary;
+    background-color: var(--colorTextPrimary);
     border-radius: 0px 20px 20px 0px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
     &:hover {
-      @include bg($colorTextPrimary, 0.8);
+      @include bg(var(--colorTextPrimary), 0.8);
     }
   }
 }
