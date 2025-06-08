@@ -1,5 +1,7 @@
-export const threeNumbers = () => {
-  const gameContainer = document.querySelector('.');
-  const gameHtml = `<h2 class="threenumbers">Введіть 3 числа</h2>`;
+export const threeNumbersInit = () => {
+  const gameContainer = document.querySelector('.biggest-number');
+  const gameHtml = `<h2 class="threenumbers">Введіть 3 числа</h2>
+ `;
+
+  gameContainer.innerHTML = gameHtml;
 };
-gameContainer.innerHTML = gameHtml;

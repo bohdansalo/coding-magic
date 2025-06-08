@@ -1,5 +1,5 @@
 import { guessNumberInit } from '../games/guess-number.js';
-
+import { threeNumbersInit } from '../games/three-numbers.js';
 const games = [
   {
     id: 1,
@@ -49,6 +49,7 @@ const games = [
     name: 'Найбільше число',
     category: 'numerical',
     class: 'biggest-number',
+    init: threeNumbersInit,
   },
   {
     id: 9,
