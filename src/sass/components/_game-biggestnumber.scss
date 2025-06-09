@@ -1,0 +1,36 @@
+.biggestnumber {
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.biggestnumber-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-text-primary);
+  margin-bottom: 36px;
+}
+.biggestnumber-numbers {
+  display: flex;
+  gap: 38px;
+  justify-content: center;
+}
+.biggestnumber-num {
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 135px;
+  height: 35px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: var(--color-background-input);
+  margin-bottom: 36px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-text-input);
+}
+.biggestnumber-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-text-primary);
+}
