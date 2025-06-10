@@ -13,6 +13,7 @@
   flex-wrap: wrap;
   gap: 36px 60px;
   max-width: 580px;
+  height: 372px;
 }
 
 .scientist__item {
@@ -22,6 +23,7 @@
   flex-direction: column;
   flex-basis: calc((100% - 180px) / 4);
   max-width: 100px;
+  min-width: 100px;
   aspect-ratio: 1;
   border-radius: 20px;
   padding: 10px;
@@ -98,6 +100,6 @@
 
   &:hover {
     transform: scale(1.03);
-    background-color: #de1c1c;
+    @include bg(var(--color-text-tretiary), 0.8);
   }
 }

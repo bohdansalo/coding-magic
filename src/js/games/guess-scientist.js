@@ -65,14 +65,13 @@ export const guessScientistsInit = () => {
     scientists
       .map(
         scientist => `
-      <li class="scientist__item" style="background-image: url(${scientist.photo});">
-          <h3 class="scientist__name">${scientist.name} ${scientist.surname}</h3>
-          <p class="scientist__life">${scientist.born} - ${scientist.dead}</p>
-      </li>
-     `
+        <li class="scientist__item" style="background-image: url(${scientist.photo});">
+            <h3 class="scientist__name">${scientist.name} ${scientist.surname}</h3>
+            <p class="scientist__life">${scientist.born} - ${scientist.dead}</p>
+        </li>
+       `
       )
       .join('');
-
   listOfScientists.innerHTML = renderScientist(scientists);
 
   const listOfActions = {
@@ -81,11 +80,13 @@ export const guessScientistsInit = () => {
         scientist => scientist.born > 1800 && scientist.born < 1900
       ),
 
-    bornAE: () =>
-      scientists.find(
+    bornAE: () => {
+      const AEScientist = scientists.find(
         scientist =>
           scientist.name === 'Albert' || scientist.surname === 'Einstein'
-      ).born,
+      );
+      return [AEScientist];
+    },
 
     sortBA: () => scientists.sort((a, b) => a.name.localeCompare(b.name)),
 
@@ -97,18 +98,21 @@ export const guessScientistsInit = () => {
     delFLA: () =>
       scientists.filter(scientist => scientist.name.charAt(0) !== 'A'),
 
-    findY: () =>
-      scientists.reduce(
+    findY: () => {
+      const findScietist = scientists.reduce(
         (acc, scientist) => (acc.born > scientist.born ? acc : scientist),
         scientists[0]
-      ),
+      );
+      console.log(findScietist);
+      return [findScietist];
+    },
 
     findSL: () => {
       const lifeDuring = scientists.sort(
         (a, b) => b.dead - b.born - (a.dead - a.born)
       );
-      console.log(lifeDuring[0], lifeDuring[lifeDuring.length - 1]);
-      return [lifeDuring[0], lifeDuring[lifeDuring.length - 1]];
+      const yAndOScientist = [lifeDuring[0], lifeDuring[lifeDuring.length - 1]];
+      return yAndOScientist;
     },
     findFL: () =>
       scientists.filter(
@@ -121,7 +125,9 @@ export const guessScientistsInit = () => {
   const handleAction = e => {
     const action = e.target.dataset.action;
     if (listOfActions[action]) {
-      renderScientist(listOfActions[action]());
+      const filteredScientist = listOfActions[action]();
+      console.log(filteredScientist);
+      listOfScientists.innerHTML = renderScientist(filteredScientist);
     }
   };
 
