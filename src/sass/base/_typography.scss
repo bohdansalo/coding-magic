@@ -3,4 +3,9 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+  background-image: url(/src/images/main/white-theme-bg-main.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

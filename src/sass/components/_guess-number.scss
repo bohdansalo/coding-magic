@@ -42,10 +42,10 @@
     font-size: 1rem;
     color: #fff;
     background-color: var(--color-text-primary);
+
     border-radius: 0px 20px 20px 0px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
     &:hover {
       background-color: var(--color-hover);
     }
