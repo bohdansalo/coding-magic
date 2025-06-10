@@ -1,5 +1,6 @@
 import { guessNumberInit } from '../games/guess-number.js';
 import { threeNumbersInit } from '../games/three-numbers.js';
+import { calculatorGame } from '../games/game-calculator.js';
 const games = [
   {
     id: 1,
@@ -25,6 +26,7 @@ const games = [
     name: 'Калькулятор',
     category: 'numerical',
     class: 'calculator',
+    init: calculatorGame,
   },
   {
     id: 5,
