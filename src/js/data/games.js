@@ -1,4 +1,5 @@
 import { guessNumberInit } from '../games/guess-number.js';
+import { guessScientistsInit } from '../games/guess-scientist.js';
 
 const games = [
   {
@@ -61,6 +62,7 @@ const games = [
     name: 'Вчений',
     category: 'acquaintance',
     class: 'scientist',
+    init: guessScientistsInit,
   },
 ];
 
