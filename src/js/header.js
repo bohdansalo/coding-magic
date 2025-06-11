@@ -1,17 +1,17 @@
-// const themeToggle = document.querySelector('[data-theme]');
-// const darkMain = document.querySelector('[data-dark]');
-
-// themeToggle.addEventListener('change', () => {
-//   document.body.classList.toggle('dark', themeToggle.checked);
-// });
+import logoDarkTheme from '../images/header/logo-dark-theme.svg';
+import logoLightTheme from '../images/header/header-logo.svg';
 
 const themeSwiper = document.querySelector('[data-theme-swiper]');
+
+const logo = document.querySelector('.logo-img');
 
 const handleTheme = event => {
   if (event.target.checked) {
     document.documentElement.dataset.theme = 'dark';
+    logo.src = logoDarkTheme;
   } else {
     document.documentElement.dataset.theme = 'light';
+    logo.src = logoLightTheme;
   }
 };
 
