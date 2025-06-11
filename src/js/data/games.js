@@ -26,7 +26,6 @@ const games = [
     name: 'Калькулятор',
     category: 'numerical',
     class: 'calculator',
-    init: calculatorGame,
   },
   {
     id: 5,
@@ -51,7 +50,6 @@ const games = [
     name: 'Найбільше число',
     category: 'numerical',
     class: 'biggest-number',
-    init: threeNumbersInit,
   },
   {
     id: 9,
