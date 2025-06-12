@@ -1,5 +1,6 @@
 import { guessNumberInit } from '../games/guess-number.js';
 import { guessScientistsInit } from '../games/guess-scientist.js';
+import { dinosaurGameInit } from '../games/dinosaur';
 
 const games = [
   {
@@ -38,6 +39,7 @@ const games = [
     name: 'Google динозаврик',
     category: 'game',
     class: 'google-din',
+    init: dinosaurGameInit,
   },
   {
     id: 7,

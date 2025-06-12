@@ -1,0 +1,97 @@
+.game__container {
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
+}
+.game__area {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/1;
+  border-radius: 10px;
+  background-image: url(/src/images/main/game/background-dino.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dinosaur {
+  position: absolute;
+  bottom: 5px;
+  left: 130px;
+  width: 60px;
+  background-image: url(/src/images/main/game/dinosaur.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+.cactus {
+  background-image: url(/src/images/main/game/cactus.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60px;
+  position: absolute;
+  bottom: 10;
+  right: 0;
+  animation: moveObstacle 1s linear infinite;
+}
+.game__title {
+  font-size: 16px;
+}
+.dinosaur__modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.dinosaur__message {
+  font-size: 20px;
+}
+.dinosaur__start {
+  border: 1px solid var(--color-text-input);
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: transform 250ms ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.dinosaur__modal.show {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+@keyframes moveObstacle {
+  from {
+    right: -20px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+.jump {
+  animation: jump 0.5s ease-out;
+}
+
+@keyframes jump {
+  0% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -100px;
+  }
+
+  100% {
+    translate: 0 0;
+  }
+}
