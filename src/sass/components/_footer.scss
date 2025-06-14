@@ -1,0 +1,34 @@
+.footer {
+  background-color: var(--color-text-secondary);
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 175px;
+  padding: 60px 0px;
+}
+
+.logo__photo {
+  width: 165px;
+}
+.subscribe__input {
+  border-radius: 20px;
+  padding: 10px 80px 10px 10px;
+  width: 204px;
+  height: 35px;
+  background-color: var(--color-background-input);
+  margin-right: 36px;
+  margin-bottom: 18px;
+}
+.subscribe__button {
+  border-radius: 20px;
+  padding: 10px;
+  width: 107px;
+  height: 35px;
+  background-color: var(--color-text-primary);
+  color: var(--color-text-secondary);
+}
+.subscribe__text {
+  font-size: 6px;
+}
