@@ -1,7 +1,5 @@
-import { guessNumberInit } from '../games/guess-number.js';
 import { threeNumbersInit } from '../games/game-biggest-number.js';
 import { guessScientistsInit } from '../games/guess-scientist.js';
-import { dinosaurGameInit } from '../games/dinosaur';
 
 const games = [
   {
