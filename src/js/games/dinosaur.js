@@ -125,7 +125,7 @@ export const dinosaurGameInit = () => {
     }
   }
   const gameDinosaurInit = () => {
-    const gameContainer = document.querySelector('[data-game_container]');
+    const gameContainer = document.querySelector('.google-din');
     const gameHtml = `<div class="game__container">
                       <h2 class="game__title">Google Динозавр</h2>
                         <div class="game__area">

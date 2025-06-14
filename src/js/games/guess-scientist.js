@@ -56,9 +56,7 @@ export const guessScientistsInit = () => {
      .join('')}
     </ul>
   `;
-
   gameContainer.innerHTML = gameHTML;
-
   const listOfScientists = document.querySelector('.scientist__list');
 
   const renderScientist = scientists =>
