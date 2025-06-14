@@ -1,12 +1,12 @@
 .calculator {
   padding-top: 36px;
   padding-bottom: 36px;
-  border-top: 1px solid $colorTextPrimary;
-  border-bottom: 1px solid $colorTextPrimary;
+  border-top: 1px solid var(--colorTextPrimary);
+  border-bottom: 1px solid var(--colorTextPrimary);
 }
 .calculator__titel {
   font-size: 16px;
-  color: $colorTextPrimary;
+  color: var(--colorTextPrimary);
   text-align: center;
   margin-bottom: 36px;
 }
@@ -15,17 +15,17 @@
   border-radius: 20px;
   padding: 10px 20px;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
-  background: $colorBackgroundInput;
+  background: var(--color-background-input);
   max-width: 135px;
   height: 35px;
 }
 .calculator__button,
 .result__button {
-  color: $colorTextSecondary;
+  color: var(--color-text-secondary);
   border-radius: 20px;
   padding: 5px 10px;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
-  background-color: $colorTextPrimary;
+  background-color: var(--color-text-primary);
   width: 27px;
   height: 25px;
 }

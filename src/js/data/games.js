@@ -1,5 +1,8 @@
 import { guessNumberInit } from '../games/guess-number.js';
 import { threeNumbersInit } from '../games/game-biggest-number.js';
+import { guessScientistsInit } from '../games/guess-scientist.js';
+import { dinosaurGameInit } from '../games/dinosaur';
+
 const games = [
   {
     id: 1,
@@ -37,6 +40,7 @@ const games = [
     name: 'Google динозаврик',
     category: 'game',
     class: 'google-din',
+    init: dinosaurGameInit,
   },
   {
     id: 7,
@@ -49,7 +53,6 @@ const games = [
     name: 'Найбільше число',
     category: 'numerical',
     class: 'biggest-number',
-    init: threeNumbersInit,
   },
   {
     id: 9,
@@ -62,6 +65,7 @@ const games = [
     name: 'Вчений',
     category: 'acquaintance',
     class: 'scientist',
+    init: guessScientistsInit,
   },
 ];
 
