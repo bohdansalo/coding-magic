@@ -1,0 +1,36 @@
+.rsp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.rsp__title {
+  font-size: 16px;
+  text-align: center;
+}
+
+.rsp__game-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rsp__list {
+  display: flex;
+  gap: 38px;
+}
+
+.rsp__btn {
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.rsp__score {
+  margin-left: 102px;
+}
