@@ -1,5 +1,6 @@
 import { guessNumberInit } from '../games/guess-number.js';
 import { guessScientistsInit } from '../games/guess-scientist.js';
+import { ourTeamInit } from '../games/our-team.js';
 
 const games = [
   {
@@ -26,7 +27,7 @@ const games = [
     name: 'Калькулятор',
     category: 'numerical',
     class: 'calculator',
-    init: calculatorGame,
+    init: '',
   },
   {
     id: 5,
@@ -51,13 +52,14 @@ const games = [
     name: 'Найбільше число',
     category: 'numerical',
     class: 'biggest-number',
-    init: threeNumbersInit,
+    init: '',
   },
   {
     id: 9,
     name: 'Наша команда',
     category: 'acquaintance',
     class: 'our-team',
+    init: ourTeamInit,
   },
   {
     id: 10,

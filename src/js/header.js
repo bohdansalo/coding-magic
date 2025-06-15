@@ -5,7 +5,7 @@
 //   document.body.classList.toggle('dark', themeToggle.checked);
 // });
 
-const themeSwiper = document.querySelector('[data-theme-swiper]');
+const themeSwiper = document.querySelector('[data-theme]');
 
 const handleTheme = event => {
   if (event.target.checked) {

@@ -3,6 +3,7 @@ html[data-theme='dark'] {
   --color-text-primary: #58a6a2;
   --color-text-secondary: #282626;
   --color-navigation-hover: #58a6a2;
+  --color-background-switch: #ffffff;
 }
 
 .header-container {
@@ -15,6 +16,10 @@ html[data-theme='dark'] {
 .header {
   background-color: var(--color-text-secondary);
   transition: 0.3s;
+}
+
+.logo__img {
+  fill: var(--color-background-switch);
 }
 
 .header__actions {
