@@ -4,7 +4,7 @@ import scissors from '../../images/main/game/scissors.webp';
 
 export const rockScissorsPaperInit = () => {
   const container = document.querySelector('[data-game_container]');
-  let gameContainer = container.querySelector('.guess-number');
+  let gameContainer = container.querySelector('.rock-paper-scissors');
 
   const gameHTML = `
   <div class="rsp-container">
