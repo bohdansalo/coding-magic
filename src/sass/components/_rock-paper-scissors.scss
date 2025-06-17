@@ -28,9 +28,13 @@
   border-radius: 16px;
   padding: 10px 10px;
   cursor: pointer;
+  background-color: var(--color-text-primary);
   transition: background 0.3s ease;
+  &:focus {
+    box-shadow: 0 0px 40px 5px var(--color-hover);
+    transition: 300ms;
+  }
 }
-
 .rsp__score {
   margin-left: 102px;
 }
