@@ -21,3 +21,9 @@ modal.addEventListener('click', function (e) {
     modal.classList.add('footer__hidden');
   }
 });
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    modal.classList.add('footer__hidden');
+  }
+});
