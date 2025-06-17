@@ -1,0 +1,109 @@
+.footer__backdrob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.footer__hidden {
+  display: none;
+}
+
+.modal {
+  background-color: var(--color-text-secondary);
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-radius: 20px;
+  width: 463px;
+  height: 245px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+.modal__close::after {
+  content: '';
+  width: 20px;
+  height: 1px;
+  transform: rotate(45deg);
+  background-color: var(--color-text-primary);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.modal__close::before {
+  content: '';
+  width: 20px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-color: var(--color-text-primary);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.footer__modal-text {
+  font-family: $FontFamilySeconary;
+  font-size: 20px;
+  width: 188px;
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+}
+.footer__modal-text::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -65px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/main/game/game-development.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer__modal-text::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -65px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/main/game/sword.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.modal__icons {
+  position: absolute;
+  top: 175px;
+  left: 87px;
+  width: 30px;
+}
+.modal__icons--secound {
+  position: absolute;
+  top: 176px;
+  right: 87px;
+  width: 30px;
+}
