@@ -1,0 +1,40 @@
+.rsp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.rsp__title {
+  font-size: 16px;
+  text-align: center;
+}
+
+.rsp__game-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rsp__list {
+  display: flex;
+  gap: 38px;
+}
+
+.rsp__btn {
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  padding: 10px 10px;
+  cursor: pointer;
+  background-color: var(--color-text-primary);
+  transition: background 0.3s ease;
+  &:focus {
+    box-shadow: 0 0px 40px 5px var(--color-hover);
+    transition: 300ms;
+  }
+}
+.rsp__score {
+  margin-left: 102px;
+}

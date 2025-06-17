@@ -9,3 +9,16 @@ body {
   background-size: cover;
   background-position: center;
 }
+.button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--color-text-primary);
+  color: var(--color-text-secondary);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.03);
+    background-color: var(--color-hover);
+  }
+}
