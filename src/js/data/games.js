@@ -2,6 +2,7 @@ import { guessNumberInit } from '../games/guess-number.js';
 import { guessScientistsInit } from '../games/guess-scientist.js';
 import { rockScissorsPaperInit } from '../games/rock-paper-scissors.js';
 import { dinosaurGameInit } from '../games/dinosaur';
+import { calculatorGameInit } from '../games/game-calculator.js';
 
 const games = [
   {
@@ -29,6 +30,7 @@ const games = [
     name: 'Калькулятор',
     category: 'numerical',
     class: 'calculator',
+    init: calculatorGameInit,
   },
   {
     id: 5,
