@@ -1,6 +1,8 @@
 import { guessNumberInit } from '../games/guess-number.js';
 import { guessScientistsInit } from '../games/guess-scientist.js';
+import { rockScissorsPaperInit } from '../games/rock-paper-scissors.js';
 import { dinosaurGameInit } from '../games/dinosaur';
+import { calculatorGameInit } from '../games/game-calculator.js';
 
 const games = [
   {
@@ -21,12 +23,14 @@ const games = [
     name: 'Камінь-Ножиці-Папір',
     category: 'game',
     class: 'rock-paper-scissors',
+    init: rockScissorsPaperInit,
   },
   {
     id: 4,
     name: 'Калькулятор',
     category: 'numerical',
     class: 'calculator',
+    init: calculatorGameInit,
   },
   {
     id: 5,

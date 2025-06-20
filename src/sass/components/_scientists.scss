@@ -90,16 +90,5 @@
 }
 
 .action__btn {
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-color: var(--color-text-primary);
-  color: var(--color-text-secondary);
   box-shadow: 3px 3px 0px 0px #00000040;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.03);
-    background-color: var(--color-hover);
-  }
 }

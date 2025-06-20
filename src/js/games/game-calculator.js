@@ -1,4 +1,4 @@
-export const calculatorGame = () => {
+export const calculatorGameInit = () => {
   const gameContainer = document.querySelector('.calculator');
 
   const gameHTML = `
