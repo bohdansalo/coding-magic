@@ -11,6 +11,9 @@
   align-items: center;
   z-index: 999;
 }
+.hidden {
+  display: none;
+}
 .login-form {
   display: flex;
   flex-direction: column;
@@ -29,7 +32,7 @@
     url(../images/main/game/puzzle.svg),
     url(../images/main/game/tic-tac-toe.svg);
   background-repeat: no-repeat;
-  background-position: 41px, 505px, 85px, 461px;
+  background-position: 41px 154px, 505px 154px, 85px 230px, 461px 230px;
 }
 
 .login-text {
