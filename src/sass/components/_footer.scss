@@ -28,7 +28,15 @@
   height: 35px;
   background-color: var(--color-text-primary);
   color: var(--color-text-secondary);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.877);
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+  }
 }
 .subscribe__text {
   font-size: 6px;
+}
+.info__link:hover {
+  text-decoration: underline;
 }
