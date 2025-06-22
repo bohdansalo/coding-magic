@@ -11,6 +11,15 @@
   --color-hover: #2d2d2d;
   --color-navigation-hover: #f1f1f1;
   --color-background-switch: #000000;
+  --color-pagination-active: #797979;
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --color-text-primary: #58a6a2;
+  --color-text-secondary: #262628;
+  --color-hover: #7c60c9;
+  --color-navigation-hover: #9dd8d5;
 }
 
 // fonts

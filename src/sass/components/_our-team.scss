@@ -58,8 +58,12 @@
     width: 150px;
     aspect-ratio: 1;
     border-radius: 20px;
-    object-fit: cover;
     overflow: hidden;
+    display: flex;
+
+    &-img {
+      object-fit: cover;
+    }
   }
 
   &__pagination {
@@ -71,8 +75,14 @@
     &-btn {
       width: 18px;
       height: 3px;
-      background-color: #898989;
+      background-color: var(--color-background-photo-frame);
       border-radius: 3px;
+      transition: width 0.3s ease, background-color 0.3s ease;
+
+      &.active {
+        width: 30px;
+        background-color: var(--color-pagination-active);
+      }
     }
   }
 }

@@ -1,0 +1,42 @@
+.footer {
+  background-color: var(--color-text-secondary);
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 175px;
+  padding: 60px 0px;
+}
+
+.logo__photo {
+  width: 165px;
+}
+.subscribe__input {
+  border-radius: 20px;
+  padding: 10px 80px 10px 10px;
+  width: 204px;
+  height: 35px;
+  background-color: var(--color-background-input);
+  margin-right: 36px;
+  margin-bottom: 18px;
+}
+.subscribe__button {
+  border-radius: 20px;
+  padding: 10px;
+  width: 107px;
+  height: 35px;
+  background-color: var(--color-text-primary);
+  color: var(--color-text-secondary);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.877);
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+.subscribe__text {
+  font-size: 6px;
+}
+.info__link:hover {
+  text-decoration: underline;
+}

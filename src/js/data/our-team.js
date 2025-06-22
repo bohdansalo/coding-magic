@@ -1,6 +1,8 @@
 // import makson from '../../images/main/makson.jpg';
-import danyl from '../../images/main/danyl.webp';
-import bogdan from '../../images/main/bogdan.webp';
+import danyl from '../../images/main/team/danyl.webp';
+import bogdan from '../../images/main/team/bogdan.webp';
+import vova from '../../images/main/team/vova.webp';
+import daniil from '../../images/main/team/daniil.webp';
 
 export const ourTeam = [
   {
@@ -18,19 +20,19 @@ export const ourTeam = [
   {
     id: 2,
     name: 'Вова',
-    photo: '',
+    photo: vova,
     description: 'Розробник',
   },
+  // {
+  //   id: 3,
+  //   name: 'Максим',
+  //   photo: '',
+  //   description: 'Розробник',
+  // },
   {
     id: 3,
-    name: 'Максим',
-    photo: '',
-    description: 'Розробник',
-  },
-  {
-    id: 4,
     name: 'Даніїл',
-    photo: '',
+    photo: daniil,
     description: 'Розробник',
   },
 ];

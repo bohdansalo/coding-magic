@@ -42,12 +42,23 @@ export const ourTeamInit = () => {
   const sliderBtns = document.querySelectorAll('[data-slider__action]');
   const sliderList = document.querySelector('[data-slider]');
   const paginationBtns = document.querySelectorAll('.our-team__pagination-btn');
-  let currentIndex = document.querySelector('.our-team__item').id;
+  let currentIndex = 0;
+
+  const setActivePagination = () =>
+    paginationBtns.forEach(btn => {
+      btn.classList.toggle(
+        'active',
+        parseInt(btn.dataset.index) === currentIndex
+      );
+    });
+
+  setActivePagination();
 
   const handlePagination = e => {
     if (e.target.dataset.slider__action === 'pagination') {
-      const index = parseInt(e.target.dataset.index, 10);
+      const index = parseInt(e.target.dataset.index);
       currentIndex = index;
+      setActivePagination();
       sliderList.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
   };
@@ -55,6 +66,7 @@ export const ourTeamInit = () => {
   const handleNext = e => {
     if (e.target.dataset.slider__action === 'next') {
       currentIndex = (currentIndex + 1) % ourTeam.length;
+      setActivePagination();
       sliderList.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
   };
@@ -62,6 +74,7 @@ export const ourTeamInit = () => {
   const handlePrev = e => {
     if (e.target.dataset.slider__action === 'back') {
       currentIndex = (currentIndex - 1 + ourTeam.length) % ourTeam.length;
+      setActivePagination();
       sliderList.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
   };

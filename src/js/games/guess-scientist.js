@@ -50,15 +50,13 @@ export const guessScientistsInit = () => {
    ${actions
      .map(
        action => `
-    <li class="scientist__action"><button class="action__btn" data-action="${action.data}">${action.text}</button></li>
+    <li class="scientist__action"><button class="button action__btn" data-action="${action.data}">${action.text}</button></li>
     `
      )
      .join('')}
     </ul>
   `;
-
   gameContainer.innerHTML = gameHTML;
-
   const listOfScientists = document.querySelector('.scientist__list');
 
   const renderScientist = scientists =>

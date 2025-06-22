@@ -5,7 +5,7 @@ const btn = document.querySelectorAll('[data-filter]');
 const gameContainer = document.querySelector('[data-game_container]');
 
 const handleFilter = e => {
-  category = e.target.dataset.filter;
+const category = e.target.dataset.filter;
   renderGames(games, gameContainer, category);
 };
 

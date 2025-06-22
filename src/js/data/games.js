@@ -1,6 +1,9 @@
 import { guessNumberInit } from '../games/guess-number.js';
 import { guessScientistsInit } from '../games/guess-scientist.js';
 import { ourTeamInit } from '../games/our-team.js';
+import { rockScissorsPaperInit } from '../games/rock-paper-scissors.js';
+import { dinosaurGameInit } from '../games/dinosaur';
+import { calculatorGameInit } from '../games/game-calculator.js';
 
 const games = [
   {
@@ -21,13 +24,14 @@ const games = [
     name: 'Камінь-Ножиці-Папір',
     category: 'game',
     class: 'rock-paper-scissors',
+    init: rockScissorsPaperInit,
   },
   {
     id: 4,
     name: 'Калькулятор',
     category: 'numerical',
     class: 'calculator',
-    init: '',
+    init: calculatorGameInit,
   },
   {
     id: 5,
@@ -40,6 +44,7 @@ const games = [
     name: 'Google динозаврик',
     category: 'game',
     class: 'google-din',
+    init: dinosaurGameInit,
   },
   {
     id: 7,
@@ -52,7 +57,6 @@ const games = [
     name: 'Найбільше число',
     category: 'numerical',
     class: 'biggest-number',
-    init: '',
   },
   {
     id: 9,
