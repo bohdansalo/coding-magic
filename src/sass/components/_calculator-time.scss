@@ -1,3 +1,41 @@
 .time-title {
   font-size: 16px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.time-input {
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: var(--color-background-input);
+  max-width: 135px;
+  height: 35px;
+  border-radius: 25px 0 0 25px;
+}
+.time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.time-button {
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-text-primary);
+  border: none;
+  border-radius: 0 25px 25px 0;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background-image: url(../images/main/game/dandruff.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px 10px;
+}
+.time-text {
+  margin-left: 33px;
+  margin-right: 33px;
 }
