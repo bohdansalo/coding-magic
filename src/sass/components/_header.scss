@@ -10,6 +10,10 @@
   transition: 0.3s;
 }
 
+.logo__img {
+  fill: var(--color-background-switch);
+}
+
 .header__actions {
   display: flex;
   gap: 51px;
