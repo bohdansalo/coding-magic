@@ -1,0 +1,26 @@
+.field {
+  border: 2px solid var(--color-text-primary);
+  border-radius: 37px;
+  max-width: 720px;
+  height: 220px;
+  background-color: var(--color-background-football);
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: top 0.5s ease, left 0.5s cubic-bezier(0.35, 1.09, 0.84, 0.98);
+  z-index: 50;
+}
+
+.football_titel {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 36px;
+}

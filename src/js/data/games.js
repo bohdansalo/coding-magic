@@ -4,6 +4,7 @@ import { ourTeamInit } from '../games/our-team.js';
 import { rockScissorsPaperInit } from '../games/rock-paper-scissors.js';
 import { dinosaurGameInit } from '../games/dinosaur';
 import { calculatorGameInit } from '../games/game-calculator.js';
+import { footballGameInit } from '../games/football.js';
 
 const games = [
   {
@@ -51,6 +52,7 @@ const games = [
     name: 'Футбол',
     category: 'game',
     class: 'soccer',
+    init: footballGameInit,
   },
   {
     id: 8,
