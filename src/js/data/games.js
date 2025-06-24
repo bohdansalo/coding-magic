@@ -1,5 +1,6 @@
 import { guessNumberInit } from '../games/guess-number.js';
 import { guessScientistsInit } from '../games/guess-scientist.js';
+import { ourTeamInit } from '../games/our-team.js';
 import { rockScissorsPaperInit } from '../games/rock-paper-scissors.js';
 import { dinosaurGameInit } from '../games/dinosaur';
 import { calculatorGameInit } from '../games/game-calculator.js';
@@ -64,6 +65,7 @@ const games = [
     name: 'Наша команда',
     category: 'acquaintance',
     class: 'our-team',
+    init: ourTeamInit,
   },
   {
     id: 10,

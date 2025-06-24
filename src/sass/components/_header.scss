@@ -10,6 +10,10 @@
   transition: 0.3s;
 }
 
+.logo__img {
+  fill: var(--color-background-switch);
+}
+
 .header__actions {
   display: flex;
   gap: 51px;
@@ -67,7 +71,7 @@
   inline-size: 100%;
 
   &:hover {
-    background-color: var(--color-navigation-hover);
+    background-color: var(--color-text-primary);
     transition: 0.5s ease;
     cursor: pointer;
   }
@@ -90,7 +94,7 @@
 .slider {
   position: absolute;
   cursor: pointer;
-  background-color: var(--color-background-switch);
+  background-color: var(--color-pagination-active);
   border-radius: 30px;
   width: 40px;
   transition: background-color 0.3s;

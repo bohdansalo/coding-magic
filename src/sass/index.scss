@@ -8,8 +8,11 @@
 @import './layout/grids';
 
 // components
+@import './components/login-form';
 @import './components/header';
+@import './components//main';
 @import './components/guess-number';
+@import './components/our-team';
 @import './components/game-biggestnumber';
 @import './components/rock-paper-scissors';
 @import './components/scientists';

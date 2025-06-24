@@ -4,6 +4,10 @@
   align-items: center;
   flex-direction: column;
   gap: 36px;
+
+  &__title {
+    font-size: 16px;
+  }
 }
 
 .scientist__list {
