@@ -6,7 +6,7 @@ import { dinosaurGameInit } from '../games/dinosaur';
 import { calculatorGameInit } from '../games/game-calculator.js';
 import { footballGameInit } from '../games/football.js';
 import { calculatorTimeInit } from '../games/game-calculator-time.js';
-
+import { biggestNubmer } from '../games/game-biggest-number.js';
 
 const games = [
   {
@@ -62,6 +62,7 @@ const games = [
     name: 'Найбільше число',
     category: 'numerical',
     class: 'biggest-number',
+    init: biggestNumber,
   },
   {
     id: 9,
