@@ -1,7 +1,7 @@
 import logoDarkTheme from '../images/header/logo-dark-theme.svg';
 import logoLightTheme from '../images/header/header-logo.svg';
 
-const themeSwiper = document.querySelector('[data-theme]');
+const themeSwiper = document.querySelector('[data-theme-swiper]');
 
 const logo = document.querySelector('.logo-img');
 const footerLogo = document.querySelector('.footer__logo--img');
