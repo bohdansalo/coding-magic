@@ -1,0 +1,22 @@
+.year-calculator-title {
+  font-size: 16px;
+  text-align: center;
+}
+.year-calculator-input {
+  border-radius: 20px;
+  padding: 10px 45px 10px 10px;
+  width: 215px;
+  height: 35px;
+  background-color: var(--color-background-input);
+}
+.year-calculator-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding: 10px;
+  background-color: var(--color-text-primary);
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

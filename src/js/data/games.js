@@ -4,6 +4,7 @@ import { ourTeamInit } from '../games/our-team.js';
 import { rockScissorsPaperInit } from '../games/rock-paper-scissors.js';
 import { dinosaurGameInit } from '../games/dinosaur';
 import { calculatorGameInit } from '../games/game-calculator.js';
+import { leapYearCalculatorInit } from '../games/game-leap-year-calculator.js';
 
 const games = [
   {
@@ -11,6 +12,7 @@ const games = [
     name: 'Високосний калькулятор',
     category: 'numerical',
     class: 'leap-year-calculator',
+    init: leapYearCalculatorInit,
   },
   {
     id: 2,
