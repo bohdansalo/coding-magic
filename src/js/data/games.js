@@ -5,6 +5,8 @@ import { rockScissorsPaperInit } from '../games/rock-paper-scissors.js';
 import { dinosaurGameInit } from '../games/dinosaur';
 import { calculatorGameInit } from '../games/game-calculator.js';
 import { footballGameInit } from '../games/football.js';
+import { calculatorTimeInit } from '../games/game-calculator-time.js';
+
 
 const games = [
   {
@@ -39,6 +41,7 @@ const games = [
     name: 'Калькулятор часу',
     category: 'numerical',
     class: 'calculator-time',
+    init: calculatorTimeInit,
   },
   {
     id: 6,
