@@ -17,12 +17,10 @@ export const footballGameInit = () => {
   const field = document.querySelector('.field');
   const ball = document.querySelector('.ball');
 
-  field.addEventListener('click', function (event) {
+  field.addEventListener('click', event => {
     const fieldRect = field.getBoundingClientRect();
-
     const x = event.clientX - fieldRect.left;
     const y = event.clientY - fieldRect.top;
-
     ball.style.left = x + 'px';
     ball.style.top = y + 'px';
   });
