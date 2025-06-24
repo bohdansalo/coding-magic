@@ -2,10 +2,41 @@
   font-size: 16px;
   text-align: center;
 }
+// .year-calculator-content {
+//   display: flex;
+//   justify-content: center;
+// }
+// .year-calculator-input {
+//   border-radius: 20px;
+//   padding: 10px 45px 10px 10px;
+//   max-width: 215px;
+//   height: 35px;
+//   background-color: var(--color-background-input);
+// }
+// .year-calculator-content {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 0;
+//   border-radius: 999px;
+
+//   margin: 0 auto;
+// }
+
 .year-calculator-input {
-  border-radius: 20px;
   padding: 10px 45px 10px 10px;
   max-width: 215px;
   height: 35px;
   background-color: var(--color-background-input);
+  border-radius: 20px 0 0 20px;
+}
+
+.year-calculator-button {
+  width: 50px;
+  height: 48px;
+  background-color: var(--color-text-primary);
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  height: 35px;
+  margin: 0 auto;
 }
