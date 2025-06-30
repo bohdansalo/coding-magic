@@ -2,41 +2,61 @@
   font-size: 16px;
   text-align: center;
 }
-// .year-calculator-content {
-//   display: flex;
-//   justify-content: center;
-// }
-// .year-calculator-input {
-//   border-radius: 20px;
-//   padding: 10px 45px 10px 10px;
-//   max-width: 215px;
-//   height: 35px;
-//   background-color: var(--color-background-input);
-// }
-// .year-calculator-content {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 0;
-//   border-radius: 999px;
 
-//   margin: 0 auto;
-// }
+.leap-year-calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding-block: 36px;
+}
+.year-calculator-wrapper {
+  display: flex;
+
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  max-width: 576px;
+  gap: 10px;
+  inline-size: 100%;
+  position: relative;
+  gap: 149px;
+}
+.year-calculator-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background-color: var(--color-background-input);
+}
 
 .year-calculator-input {
-  padding: 10px 45px 10px 10px;
-  max-width: 215px;
-  height: 35px;
+  padding: 10px;
+  border-radius: 20px;
   background-color: var(--color-background-input);
-  border-radius: 20px 0 0 20px;
+  width: 180px;
 }
 
 .year-calculator-button {
-  width: 50px;
-  height: 48px;
-  background-color: var(--color-text-primary);
-  border-radius: 0 20px 20px 0;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 35px;
-  margin: 0 auto;
+  width: 35px;
+  background-color: var(--color-text-primary);
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.year-calculator-button:before {
+  content: '';
+  display: block;
+  width: 15px;
+  background-image: url('../images/main/game/loupe.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
