@@ -5,25 +5,27 @@
 
 .leap-year-calculator {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leap-year {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 36px;
-  padding-block: 36px;
+  inline-size: 100%;
+  max-width: 576px;
 }
 .year-calculator-wrapper {
   display: flex;
-
   align-items: center;
-  justify-content: left;
-  flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 576px;
-  gap: 10px;
   inline-size: 100%;
-  position: relative;
-  gap: 149px;
 }
 .year-calculator-content {
+  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +39,8 @@
   padding: 10px;
   border-radius: 20px;
   background-color: var(--color-background-input);
-  width: 180px;
+  max-width: 180px;
+  color: var(--color-text-secondary);
 }
 
 .year-calculator-button {
@@ -50,11 +53,13 @@
   border-radius: 0px 20px 20px 0px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  position: relative;
 }
 .year-calculator-button:before {
   content: '';
   display: block;
   width: 15px;
+  height: 15px;
   background-image: url('../images/main/game/loupe.webp');
   background-position: center;
   background-repeat: no-repeat;
