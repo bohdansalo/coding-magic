@@ -7,6 +7,7 @@ import { calculatorGameInit } from '../games/game-calculator.js';
 import { footballGameInit } from '../games/football.js';
 import { calculatorTimeInit } from '../games/game-calculator-time.js';
 import { threeNumbersInit } from '../games/game-biggest-number.js';
+import { leapYearCalculatorInit } from '../games/game-leap-year-calculator.js';
 
 const games = [
   {
@@ -14,6 +15,7 @@ const games = [
     name: 'Високосний калькулятор',
     category: 'numerical',
     class: 'leap-year-calculator',
+    init: leapYearCalculatorInit,
   },
   {
     id: 2,
